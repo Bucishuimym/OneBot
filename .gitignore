@@ -1,0 +1,30 @@
+# ---- 构建产物（CMake 的 --preset binaryDir 就是 out/）----
+out/
+build/
+x64/
+Debug/
+Release/
+ipch/
+
+# ---- 编译中间文件（兜底，正常都在 out/ 里）----
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.log
+
+# ---- IDE / 编辑器 ----
+.vs/
+.idea/
+.vscode/
+*.vcxproj.user
+
+# ---- NapCat 本体不随仓库走 ----
+# 实际安装在 K:\XXFS\AppData\NapCat，用配置连过去（见 README）
+# 里面的 config/ 是活凭据（OneBot token / WebUI token），永远不要提交
+napcat/
+
+# CMakePresets.json 要提交（构建入口）
+!CMakePresets.json

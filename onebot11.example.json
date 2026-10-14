@@ -1,0 +1,38 @@
+{
+  "network": {
+    "httpServers": {
+      "enable": true,
+      "name": "First",
+      "host": "127.0.0.1",
+      "port": 3000,
+      "enableCors": true,
+      "enableWebsocket": true,
+      "messagePostFormat": "array",
+      "token": "",
+      "debug": false
+    },
+    "httpSseServers": {},
+    "httpClients": {
+      "enable": true,
+      "name": "push",
+      "url": "http://127.0.0.1:3001/onebot",
+      "reportSelfMessage": true,
+      "messagePostFormat": "array",
+      "token": "",
+      "debug": true
+    },
+    "websocketServers": {},
+    "websocketClients": {},
+    "plugins": {}
+  },
+  "musicSignUrl": "",
+  "enableLocalFile2Url": false,
+  "parseMultMsg": false,
+  "imageDownloadProxy": "",
+  "timeout": {
+    "baseTimeout": 10000,
+    "uploadSpeedKBps": 256,
+    "downloadSpeedKBps": 256,
+    "maxTimeout": 1800000
+  }
+}
